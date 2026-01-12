@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Default dark mode */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Light mode styling */
+:root:not(.dark) {
+  background: linear-gradient(to bottom right, #e0f2fe, #bae6fd, #7dd3fc) !important;
+}
+
+:root:not(.dark) body {
+  background: linear-gradient(to bottom right, #e0f2fe, #bae6fd, #7dd3fc);
+}
+
+/* Light mode - Update main container background */
+:root:not(.dark) .min-h-screen {
+  background: linear-gradient(to bottom right, #e0f2fe, #bae6fd, #7dd3fc) !important;
+}
+
+/* Light mode - Card backgrounds with better contrast */
+:root:not(.dark) .bg-slate-900\/50 {
+  background-color: rgba(255, 255, 255, 0.85) !important;
+  border-color: #94a3b8 !important;
+  backdrop-filter: blur(10px);
+}
+
+:root:not(.dark) .bg-slate-800\/50 {
+  background-color: rgba(241, 245, 249, 0.9) !important;
+  border-color: #cbd5e1 !important;
+}
+
+:root:not(.dark) .bg-slate-800 {
+  background-color: #f1f5f9 !important;
+  border-color: #cbd5e1 !important;
+}
+
+/* Light mode - Text colors with better contrast */
+:root:not(.dark) .text-white {
+  color: #0f172a !important;
+}
+
+:root:not(.dark) .text-slate-400 {
+  color: #475569 !important;
+}
+
+:root:not(.dark) .text-slate-300 {
+  color: #334155 !important;
+}
+
+:root:not(.dark) .text-slate-500 {
+  color: #64748b !important;
+}
+
+:root:not(.dark) .text-slate-600 {
+  color: #475569 !important;
+}
+
+/* Light mode - Border colors */
+:root:not(.dark) .border-slate-800,
+:root:not(.dark) .border-slate-700 {
+  border-color: #94a3b8 !important;
+}
+
+/* Light mode - Code block styling */
+:root:not(.dark) .bg-slate-800\/50 {
+  background-color: #f8fafc !important;
+}
+
+/* Light mode - Hover states */
+:root:not(.dark) .hover\:bg-slate-700:hover {
+  background-color: #e2e8f0 !important;
+}
+
+:root:not(.dark) .hover\:bg-slate-800:hover {
+  background-color: #f1f5f9 !important;
+}
+
+/* Light mode - Keep cyan accents vibrant */
+:root:not(.dark) .text-cyan-400 {
+  color: #0891b2 !important;
+}
+
+/* Light mode - Floating icons more visible */
+:root:not(.dark) .text-cyan-500\/30 {
+  color: rgba(6, 182, 212, 0.4) !important;
+}
+
+:root:not(.dark) .text-purple-500\/30 {
+  color: rgba(168, 85, 247, 0.4) !important;
+}
+
+:root:not(.dark) .text-yellow-500\/30 {
+  color: rgba(234, 179, 8, 0.4) !important;
+}
+
+/* Light mode - Buttons */
+:root:not(.dark) .bg-cyan-500 {
+  background-color: #0891b2 !important;
+}
+
+:root:not(.dark) .hover\:bg-cyan-600:hover {
+  background-color: #0e7490 !important;
+}
